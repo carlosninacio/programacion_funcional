@@ -1,3 +1,5 @@
+package Leccion1_Sintaxis_Lambda;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
