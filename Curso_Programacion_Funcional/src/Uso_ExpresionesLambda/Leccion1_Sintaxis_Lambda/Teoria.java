@@ -1,6 +1,4 @@
-package Intento2.Leccion1_Sintaxis_Lambda;
-
-import java.sql.SQLOutput;
+package Uso_ExpresionesLambda.Leccion1_Sintaxis_Lambda;
 
 public class Teoria {
 

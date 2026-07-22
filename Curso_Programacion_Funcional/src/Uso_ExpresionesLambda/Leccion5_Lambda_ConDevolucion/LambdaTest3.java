@@ -1,4 +1,4 @@
-package Intento2.Leccion5_Lambda_ConDevolucion;
+package Uso_ExpresionesLambda.Leccion5_Lambda_ConDevolucion;
 
 public class LambdaTest3 {
 

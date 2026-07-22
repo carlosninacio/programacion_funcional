@@ -1,4 +1,4 @@
-package Intento2.Leccion3_Lambda_NoParametros;
+package Uso_ExpresionesLambda.Leccion3_Lambda_NoParametros;
 
 public class LambdaTest {
     public static void main(String[] args) {

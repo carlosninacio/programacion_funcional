@@ -1,4 +1,4 @@
-package Intento2.Leccion1_Sintaxis_Lambda;
+package Uso_ExpresionesLambda.Leccion1_Sintaxis_Lambda;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

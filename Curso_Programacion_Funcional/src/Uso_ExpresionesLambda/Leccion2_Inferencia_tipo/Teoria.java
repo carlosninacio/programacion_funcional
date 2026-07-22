@@ -1,4 +1,4 @@
-package Intento2.Leccion2_Inferencia_tipo;
+package Uso_ExpresionesLambda.Leccion2_Inferencia_tipo;
 public class Teoria {
     public static void main(String[] args) {
         Function f = (parametro, parametro2) -> System.out.println(parametro);
