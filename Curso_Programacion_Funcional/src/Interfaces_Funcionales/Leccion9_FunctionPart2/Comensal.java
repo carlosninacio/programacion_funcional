@@ -1,4 +1,4 @@
-package Leccion9_FunctionPart2;
+package Interfaces_Funcionales.Leccion9_FunctionPart2;
 
 public class Comensal {
     String nombre;

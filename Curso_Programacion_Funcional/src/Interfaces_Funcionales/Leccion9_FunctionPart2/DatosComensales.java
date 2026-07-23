@@ -1,4 +1,4 @@
-package Leccion9_FunctionPart2;
+package Interfaces_Funcionales.Leccion9_FunctionPart2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
