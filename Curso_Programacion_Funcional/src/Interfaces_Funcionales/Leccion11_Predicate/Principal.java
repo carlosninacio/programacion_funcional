@@ -1,5 +1,6 @@
 package Interfaces_Funcionales.Leccion11_Predicate;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Arrays;
 import java.util.List;
 
@@ -40,6 +41,28 @@ public class Principal {
         List<Empleado> empJovenes = evaluador.evaluar(listaEmpleados,
                 empleado -> empleado.getEdad() <= 25);
         for (Empleado empleado : empJovenes) {
+            System.out.println(empleado.getNombre() + " -> " + empleado.getEdad());
+        }
+
+        // Lección 12 - Predicate + BiFunction
+        // Ejemplo: Programa en que a los empleados jovenes se les incrementa el salario
+
+        L12_Funciones func = new L12_Funciones();
+        for (Empleado empleado : empJovenes) {
+            double nuevoSalario = func.incrementoSalario(empleado, 10,
+                    (salario, incremento) -> salario + (salario * (incremento/100)));
+            empleado.setSalario(nuevoSalario);
+        }
+
+        System.out.println("\nSalarios actualizados en los jóvenes:");
+        for (Empleado empleado : empJovenes) {
+            System.out.println(empleado.getNombre() + " -> " + empleado.getSalario());
+        }
+
+        System.out.println("\nEmpleados que sean mayores de 25 años: ");
+        List<Empleado> empMayores = evaluador.evaluarAlContrario(listaEmpleados,
+                empleado -> empleado.getEdad() <= 25);
+        for (Empleado empleado : empMayores) {
             System.out.println(empleado.getNombre() + " -> " + empleado.getEdad());
         }
     }
