@@ -39,6 +39,9 @@ public class Principal {
         System.out.println("Personas ordenadas por nombre: ");
         Collections.sort(personas, comparador::compararPorNombre);
         personas.forEach(System.out::println);
+
+        // Leccion 21 - Referenciado Instancia de un objeto arbitrario (Tipo 3)
+        Collections.sort(personas, Persona::compararPorEdad2);
     }
 
 }

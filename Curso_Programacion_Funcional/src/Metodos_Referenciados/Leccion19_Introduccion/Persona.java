@@ -43,4 +43,9 @@ public class Persona {
     public static int compararPorEdad(Persona a, Persona b) {
         return a.getEdad().compareTo(b.getEdad());
     }
+
+    // Metodo de instancia para probar el tipo 3
+    public  int compararPorEdad2(Persona per) {
+        return this.getEdad().compareTo(per.getEdad());
+    }
 }
