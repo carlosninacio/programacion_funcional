@@ -1,5 +1,7 @@
 package Metodos_Referenciados.Leccion19_Introduccion;
 
+import Metodos_Referenciados.Leccion20_ReferenciadoInstancia.ProveedorComparaciones;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -30,6 +32,13 @@ public class Principal {
         // 2. Referencia a un metodo de instancia de un objeto particular
         // 3. Referencia a un metodo de instancia de un objeto abitrario de un tipo particular
         // 4. Referencia a un constructor
+
+        // Leccion 20 - Referenciado Instancia (Tipo 2)
+        ProveedorComparaciones comparador = new ProveedorComparaciones();
+        System.out.println(" ");
+        System.out.println("Personas ordenadas por nombre: ");
+        Collections.sort(personas, comparador::compararPorNombre);
+        personas.forEach(System.out::println);
     }
 
 }
