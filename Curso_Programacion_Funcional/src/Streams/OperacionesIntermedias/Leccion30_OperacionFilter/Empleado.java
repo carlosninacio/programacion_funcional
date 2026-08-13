@@ -3,12 +3,17 @@ package Streams.OperacionesIntermedias.Leccion30_OperacionFilter;
 import java.util.Arrays;
 import java.util.List;
 
-public class Empleado {
+public class Empleado implements Comparable {
     private long id;
     private String nombre;
     private double ingresos;
     private Genero genero;
     private int edad;
+
+    @Override
+    public int compareTo(Object o) {
+        return this.getNombre().compareTo(((Empleado)o).getNombre());
+    }
 
     public static enum Genero {
         HOMBRE, MUJER
